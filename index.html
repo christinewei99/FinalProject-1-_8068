@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Philly Libraries & Schools</title>
+    <link href="css/leaflet.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Asul:400,700' rel='stylesheet' type='text/css'>
+	<script src="js/jquery-2.1.0.min.js"></script>
+	<script src="js/leaflet.js"></script>
+	<script src="js/map.js"></script>
+</head>
+
+
+<body>
+<div class="topBanner">
+    <div class="bannerContent">
+	<a href="http://www.google.com"><img src="img/logo.png"></a> 
+    <h2>Web Mapping Final Project</h2>
+    <h1>Visualizing Educational Facilities in Philly</h1>       
+    </div>
+</div>
+</br>
+</br>
+<div class="container">
+	<h3><span class = "special"> Introduction </span></h3>
+	</br>
+    <p class="half">Philadelphia is a historical city in eastern USA. It is the largest city in the Commonwealth of Pennsylvania and the fifth-most populous in the United States. According to 2014 US census, Philadelphia estimated total population was 1,560,297. In the Northeastern United States, at the confluence of the Delaware and Schuylkill rivers, Philadelphia is the economic and cultural anchor of the Delaware Valley, a metropolitan area home to 7.2 million people and the eighth-largest combined statistical area in the United States.</p>
+    	<div class = "one-third">
+		<h4>How does this map works:</h4>
+		<p>The user can select or deselect any layer s/he want to see, and can create a visual relationship with the ethnic group of population and the educational facilities (location of school and library) by neighborhood. It has six available layers that can be check “on” and “off” depending on the user interest. These check “on” and “off” options will give a full freedom to see his/her visual analysis about the number of schools or the number of public libraries or both by the neighborhood. The user can correlate the school’ and public libraries layers with the percentage of different ethnic group once at a time or with the total number of population.</p>
+	</div>
+    <h3><span class="special">The Project</span></h3>
+	<h4>Visualizing Schools and Public Libraries in Philadelphia  </h4>
+	<div class="two-third">
+	 <br/>
+		<p> This map shows how the schools and public free libraries are facilitated for the city population, and how they distributed depending on the total population and how the facility vary between  ethnic group of population. It shows the relationship between the number of schools and public libraries with the percentage of the ethnic group of population by neighborhood. This map will make a clear visualization of 157 neighborhood’s number of schools and public libraries with the percentage of different ethnic group of population.</p>
+		<div id="mapcontainer">
+		<div id="map"><div>
+		</div>
+    </div>
+	</br>
+	<div class="special-two-third">
+	 <div class="col-sm-3">
+        <section id="options-map">
+        <section id="controls">
+            <form class="form" role="form">
+
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" id="pop-total" checked> Total Population
+                    </label>
+                </div>
+
+                <div class="checkbox">
+                <label>
+                    <input type="checkbox" id="pop-white"> Percent of white
+                </label>
+            </div>
+
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" id="pop-aa"> Percent of AA
+                    </label>
+                </div>
+
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" id="pop-asian"> Percent of Asian
+                    </label>
+                </div>
+
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" id="ch-libraries"> Libraries
+                    </label>
+                </div>
+
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" id="ch-schools"> Schools
+                    </label>
+                </div>
+
+            </form>
+        </section>
+            <section id="percents">
+
+
+            </section>
+        <section id="info-map">
+
+        </section>
+        </section>
+    </div>
+    </div>
+	</div>
+</div>
+<div class = "one-third">
+	<h4>Analysis Example</h4>
+	<p>Selecting total population, libraries and schools will show that in the southern part of Philadelphia have more schools and libraries than northeast part, although, there is more people than south Philadelphia.  By selecting Percent of A.A. instead of total population, there are 19 libraries and 175 schools located at north and southwest Philadelphia where 68 to 95 percent populations are African American. Similarly, when we check on percent of Asian, it will show that, there are only 9 neighborhoods where 16 to 36 percent populations are Asian and the public libraries and schools are very close to those neighborhoods.</p>
+	</div>
+</body>
+</html>
